@@ -1,0 +1,11 @@
+
+<div id="comments">
+    <!-- Display existing comments here if any -->
+
+    <!-- Add a new comment form -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Post Comment</button>
+    </form>
+</div>
